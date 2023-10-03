@@ -19,3 +19,16 @@ It includes a lot of scaffolding for http servers that I've built up over the ye
 - `model`: a package for all of the data models used throughout the service
 - `*-service`: an isolated package of business logic functions that can be deployed independently, or as a part of a larger service like `handlers`
 - `swaggerui`: a simple swagger ui page that can simplify documentation based on yaml or json openapi files
+
+## Running Locally
+
+### Prerequisites
+
+- [Go](https://golang.org/doc/install)
+- [Docker](https://docs.docker.com/get-docker/)
+
+### Commands
+
+- `make`: run the server locally.  spins up mock services outlined in `docker-compose.yaml`
+  - This starts the server on port 8080
+  - Additional AWS infra can be connected to in `api_common/aws_utils/aws_client.go`

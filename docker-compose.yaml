@@ -15,7 +15,7 @@ services:
       - .:/app
     # forward the docker app's router port to the standard router port
     ports:
-      - '4000:8080'
+      - '8080:8080'
   local-dynamodb:
     image: amazon/dynamodb-local:latest
     command: "-jar DynamoDBLocal.jar -inMemory -sharedDb"
