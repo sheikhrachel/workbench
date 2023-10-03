@@ -19,10 +19,10 @@ type Handler struct {
 // New returns a new Handler pointer
 func New(cc call.Call) *Handler {
 	awsClient := aws.Init(cc)
-	userPreferencesService := workbench_service.New(cc, awsClient)
+	workbenchService := workbench_service.New(cc, awsClient)
 	return &Handler{
 		appEnv:           cc.Env,
 		aws:              awsClient,
-		workbenchService: userPreferencesService,
+		workbenchService: workbenchService,
 	}
 }

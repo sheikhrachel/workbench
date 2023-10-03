@@ -5,7 +5,7 @@ import (
 	"log"
 )
 
-const loggingPrefix = "UserPreferencesService"
+const loggingPrefix = "WorkbenchService"
 
 // getLoggingPrefix returns the logging prefix for the current service and environment
 func (cc *Call) getLoggingPrefix() string {
