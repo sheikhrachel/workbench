@@ -1,8 +1,3 @@
-###############################
-# These are some initial vars
-# that we set to enable reuse
-# of this Makefile for future projects
-###############################
 CURR_DIR            := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 ROOT                := $(shell pwd)
 SERVICE_NAME        := workbench
@@ -17,8 +12,7 @@ GO_HTML_COV         := ./coverage.html
 default: compose
 
 ###############################
-# !!! START HERE !!!
-# make compose
+# make || make compose
 # will run this service and
 # enable you to hit endpoints
 # on localhost:4000
@@ -34,8 +28,5 @@ endif
 	docker-compose -f docker-compose.yaml up
 	$(info "Service is UP!")
 	$(info "=> curl http://localhost:4000/health")
-
-###############################
-# !!! START HERE !!!
 shutdown:
 	docker-compose -f docker-compose.yaml down
