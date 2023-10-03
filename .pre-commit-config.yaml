@@ -16,3 +16,10 @@ repos:
     args: [--autofix]
   - id: pretty-format-yaml
     args: [--autofix, --indent, '2']
+- repo: local
+  hooks:
+  - id: shellcheck
+    name: shellcheck
+    entry: shellcheck
+    language: system
+    files: \.sh$
