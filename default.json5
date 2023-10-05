@@ -1,5 +1,5 @@
 {
-  automerge: false,
+  automerge: true,
   automergeStrategy: 'auto',
   automergeType: 'pr',
   platformAutomerge: true,
