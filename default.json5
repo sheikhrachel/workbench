@@ -57,5 +57,5 @@
     semanticCommitType: 'fix',
     schedule: 'at any time',
   },
-  timezone: 'America/San_Francisco',
+  timezone: 'America/Los_Angeles',
 }
