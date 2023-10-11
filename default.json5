@@ -6,9 +6,10 @@
   commitBodyTable: true,
   dependencyDashboard: true,
   enabledManagers: [
+    'dockerfile',
+    'docker-compose',
     'gomod',
-    'hermit',
-    'dockerfile'
+    'hermit'
   ],
   extends: [
     ':disablePrControls'
