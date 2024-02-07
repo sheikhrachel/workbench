@@ -1,5 +1,5 @@
 # First "layer" of the image, only used to build
-FROM public.ecr.aws/docker/library/golang:1.21 as builder
+FROM public.ecr.aws/docker/library/golang:1.22 as builder
 
 # Create a build dir and copy all the things
 RUN mkdir /build
