@@ -7,7 +7,7 @@ require (
 	github.com/gin-contrib/cors v1.5.0
 	github.com/gin-gonic/gin v1.9.1
 	github.com/integralist/go-elasticache v0.0.0-20190122104721-fb0aee05cd4e
-	github.com/jellydator/ttlcache/v3 v3.1.1
+	github.com/jellydator/ttlcache/v3 v3.2.0
 	github.com/s-wijaya/gin-timeout v0.1.1
 	github.com/smarty/assertions v1.15.1
 )
