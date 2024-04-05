@@ -3,7 +3,7 @@ module github.com/sheikhrachel/workbench
 go 1.20
 
 require (
-	github.com/aws/aws-sdk-go v1.50.2
+	github.com/aws/aws-sdk-go v1.51.16
 	github.com/gin-contrib/cors v1.5.0
 	github.com/gin-gonic/gin v1.9.1
 	github.com/integralist/go-elasticache v0.0.0-20190122104721-fb0aee05cd4e
