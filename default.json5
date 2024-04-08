@@ -24,6 +24,17 @@
   semanticCommits: 'enabled',
   separateMajorMinor: true,
   separateMinorPatch: false,
+  "packageRules": [
+    {
+      "updateTypes": ["patch", "minor"],
+      "automerge": true,
+      "groupName": "Patch/Minor Updates"
+    },
+    {
+      "updateTypes": ["major"],
+      "automerge": false,
+    }
+  ],
   separateMultipleMajor: false,
   schedule: 'after 7am and before 12pm every weekday',
   postUpdateOptions: [
