@@ -1,6 +1,6 @@
 module github.com/sheikhrachel/workbench
 
-go 1.20
+go 1.23.1
 
 require (
 	github.com/aws/aws-sdk-go v1.51.16
